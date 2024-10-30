@@ -1,0 +1,203 @@
+/*              ALL             */
+a{
+    text-decoration: none;
+}
+/*              COMMON              */
+
+/*Header*/
+#header{
+    display: grid;
+    overflow: hidden;
+
+    width: 950px;
+    height: 150px;
+    margin: -5px 0 5px 0;
+    border-radius: 15px;
+    
+    background-color: aqua;
+
+    justify-self: center;
+}
+#header #headerLogo{
+    margin: auto;
+    height: 90%;
+
+    justify-self: center;
+}
+#header #headerLogo img{
+    height: 100%;
+}
+#header #headerInfo{
+    display: flex;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: red;
+
+    align-self: flex-end;
+}
+#header #headerInfo #headerInfoClock{
+    margin: auto 5px;
+    width: 90px;
+
+    background-color: beige;
+}
+
+/*Middle*/
+#middle{
+    display: flex;
+    overflow: hidden;
+    width: 950px;
+    border-radius: 15px;
+
+    background-color: bisque;
+
+    justify-self: center;
+}
+
+/*Left Index*/
+#leftIndex{
+    display: flex;
+    overflow: hidden;
+    width: 200px;
+
+    background-color: burlywood;
+}
+#leftIndex div{
+    display: table;
+    overflow: hidden;
+    width: 190px;
+    margin: 10px auto;
+
+    background-color: aquamarine;
+
+    align-content: center;
+}
+#leftIndex div div{
+    display: grid;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+
+    background-color: aqua;
+
+}
+#leftIndex div div div{
+    display: flex;
+    overflow: hidden;
+    height: 45px;
+    margin-left: 5px;
+
+    background-color: beige;
+    
+}
+#leftIndex div div div h1{
+    margin: 5px 0 0 5px;
+    font-size: 30px;
+    text-transform: uppercase;
+    
+}
+#leftIndex div div a{
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+#content{
+    display: grid;
+    overflow: hidden;
+    margin: 0 4px;
+    width: 750px;
+    background-color: aqua;
+}
+
+/*General*/
+/*middle index*/
+.clickOptions{
+    display: flex;
+    width: 100%;
+    margin: 10px 0 0 0;
+
+    background-color: aquamarine;
+
+    text-transform: capitalize;
+
+    justify-content: center;
+} 
+/*asset block*/
+.assetBlock{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 5px;
+    width: calc(750px/4.2);
+
+    background-color: blue;
+
+    transition:0.2s;
+}
+.assetImg{
+    width: 100%;
+
+    transition: 0.2s;
+}
+.assetImg:hover{
+    border-radius: 20px;
+   filter: brightness(25%); 
+   
+   transition: 0.2s;
+}
+.assetImgAlt {
+    display: none !important;
+    position: absolute;
+    margin-top: 10px;
+
+    justify-self: center;
+
+    color: white;
+
+    user-select: none;
+
+    transition: 0.2s;
+}
+.assetImg:hover + .assetImgAlt{
+    display: block !important;
+    transition: 0.2s;
+}
+.assetImgAlt:hover{
+    display: block !important;
+    transition: 0.2s;
+}
+.assetName{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+.assetName h2{
+    margin: 10px auto auto 4px;
+    text-transform: capitalize;
+}
+/*where to find*/
+.foundAt{
+    margin: auto;
+    text-transform: capitalize;
+}
+.foundAt img{
+    width: 10px;
+}
+
+/*              HOME                */
+
+/*              TRAITS              */
+
+#content div h2{
+    margin: 10px auto 5px 4px;
+}
+#content div div{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: auto;
+}
+
+
+
