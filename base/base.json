@@ -1,0 +1,45 @@
+{
+    "shop": {
+        "shop_name": "shop name",
+        "shop_div_name": "shop1",
+        "URL": "https://placehold.co/500",
+        "name": "item 1",
+        "description": "item does this and that",
+        "price": 100,
+        "currency_type": "https://placehold.co/500",
+        "found_at": "drink",
+        "found_img":"https://placehold.co/100",
+        "found_link":"",
+        "used_on": "drink",
+        "used_img":"https://placehold.co/100",
+        "used_link":""
+    },
+    "trait": {
+        "URL": "https://placehold.co/500",
+        "name": "",
+        "type": "",
+        "description": "",
+        "found_at": "drink",
+        "found_img":"https://placehold.co/100",
+        "found_link":""
+    },
+    "masterlist":{
+        "url": "",
+        "id":"",
+        "name":"",
+        "owner_name":"",
+        "rarity":"",        
+        "traits":{
+            "trait1":"",
+            "trait2":"",
+            "trait3":"",
+            "trait4":"",
+            "trait5":"",
+            "trait6":"",
+            "trait7":"",
+            "trait8":"",
+            "trait9":"",
+            "trait10":""
+        }
+    }
+}

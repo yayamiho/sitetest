@@ -1,0 +1,16 @@
+[
+    {
+        "type": "type",
+        "URL": "https://placehold.co/500",
+        "name": "item 1",
+        "description": "item does this and that",
+        "price": 100,
+        "currency_type": "https://placehold.co/500",
+        "found_at": "drink",
+        "found_img":"https://placehold.co/100",
+        "found_link":"",
+        "used_on": "drink",
+        "used_img":"https://placehold.co/100",
+        "used_link":""
+    }
+]

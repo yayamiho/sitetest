@@ -6,165 +6,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mizu yaya zalgo CS</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <script src="../javascript/code.js"></script>
 </head>
 
 <body>
-    <div id="header">
-        <div id="headerLogo">
-            <img src="https://placehold.co/200x100" alt="Logo">
-        </div>
-        <div id="headerInfo">
-            <div id="headerInfoClock">
-                00:00:00
-            </div>
-            <div id="headerInfoRight">
-            </div>
-        </div>
+    <div style="margin-left: 8px" id="all">
+        <div id="header"> </div>
+        <div id="middle">
+            <div id="leftIndex"> </div>
+            <div id="content">
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+                <div class="clickOptions">
+                    <h3>|&nbsp;
+                        <a onclick="event.preventDefault();openDiv('traitCommon', 'traitSeasonal')" href="">all</a>
+                        &nbsp;|&nbsp;
+                        <a onclick="event.preventDefault();closeDiv('traitSeasonal'); openDiv('traitCommon')"
+                            href="">common</a>
+                        &nbsp;|&nbsp;
+                        <a onclick="event.preventDefault();closeDiv('traitCommon'); openDiv('traitSeasonal')"
+                            href="">Uncommon</a>
+                        &nbsp;|
+                    </h3>
+                </div>
 
+                <div id="traitCommon">
+                    <h2>Common Traits</h2>
+                    <div class="assetGrid">
+                        <div class="assetBlock">
+                            <img class="assetImg" onclick="openModal(this)"
+                                src="https://www.steppestravel.com/app/uploads/2019/06/mountain-fuji-500x800.jpg"
+                                alt="trait">
+                            <div class="assetImgAlt">trait does this and that</div>
+                            <div class="assetName">
+                                <h2>name</h2>
+                            </div>
+                            <div class="foundAt">
+                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
+                            </div>
+                        </div>
+                        <div class="assetBlock">
+                            <img class="assetImg" onclick="openModal(this)" src="https://placehold.co/500x800"
+                                alt="trait">
+                            <div class="assetImgAlt">trait does this and that</div>
+                            <div class="assetName">
+                                <h2>name</h2>
+                            </div>
+                            <div class="foundAt">
+                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
+                            </div>
+                        </div>
+                        <div class="assetBlock">
+                            <img class="assetImg" onclick="openModal(this)" src="https://placehold.co/500x800"
+                                alt="trait">
+                            <div class="assetImgAlt">trait does this and that</div>
+                            <div class="assetName">
+                                <h2>name</h2>
+                            </div>
+                            <div class="foundAt">
+                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
+                            </div>
+                        </div>
+                        <div class="assetBlock">
+                            <img class="assetImg" onclick="openModal(this)" src="https://placehold.co/500x800"
+                                alt="trait">
+                            <div class="assetImgAlt">trait does this and that</div>
+                            <div class="assetName">
+                                <h2>name</h2>
+                            </div>
+                            <div class="foundAt">
+                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
+                            </div>
+                        </div>
+                        <div class="assetBlock">
+                            <img class="assetImg" onclick="openModal(this)" src="https://placehold.co/500x800"
+                                alt="trait">
+                            <div class="assetImgAlt">trait does this and that</div>
+                            <div class="assetName">
+                                <h2>name</h2>
+                            </div>
+                            <div class="foundAt">
+                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="traitSeasonal">
+                    <h2>Seasonal Traits</h2>
+                    <div class="assetGrid">
+                        <div class="assetBlock">
+                            <img class="assetImg" onclick="openModal(this)" src="https://placehold.co/500x800"
+                                alt="trait">
+                            <div class="assetImgAlt">trait does this and that</div>
+                            <div class="assetName">
+                                <h2>name</h2>
+                            </div>
+                            <div class="foundAt">
+                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
+                            </div>
+                        </div>
+                        <div class="assetBlock">
+                            <img class="assetImg" onclick="openModal(this)" src="https://placehold.co/500x800"
+                                alt="trait">
+                            <div class="assetImgAlt">trait does this and that</div>
+                            <div class="assetName">
+                                <h2>name</h2>
+                            </div>
+                            <div class="foundAt">
+                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
+                            </div>
+                        </div>
+                        <div class="assetBlock">
+                            <img class="assetImg" onclick="openModal(this)" src="https://placehold.co/500x800"
+                                alt="trait">
+                            <div class="assetImgAlt">trait does this and that</div>
+                            <div class="assetName">
+                                <h2>name</h2>
+                            </div>
+                            <div class="foundAt">
+                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
+                            </div>
+                        </div>
+                        <div class="assetBlock">
+                            <img class="assetImg" onclick="openModal(this)" src="https://placehold.co/500x800"
+                                alt="trait">
+                            <div class="assetImgAlt">trait does this and that</div>
+                            <div class="assetName">
+                                <h2>name</h2>
+                            </div>
+                            <div class="foundAt">
+                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
+                            </div>
+                        </div>
+                        <div class="assetBlock">
+                            <img class="assetImg" onclick="openModal(this)" src="https://placehold.co/500x800"
+                                alt="trait">
+                            <div class="assetImgAlt">trait does this and that</div>
+                            <div class="assetName">
+                                <h2>name</h2>
+                            </div>
+                            <div class="foundAt">
+                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div id="middle">
-        <div id="leftIndex">
-            <div>
-                <div>
-                    <div>
-                        <img src="https://placehold.co/100" alt="">
-                        <h1>title 1</h1>
-                    </div>
-                    <a href="">Home</a>
-                    <a href="">Newbie guide</a>
-                    <a href="">Which Waystone</a>
-                </div>
-                <div>
-                    <div>
-                        <img src="https://placehold.co/100" alt="">
-                        <h1>title 2</h1>
-                    </div>
-                    <a href="">test1</a>
-                    <a href="">test2</a>
-                </div>
-            </div>
-
-
-        </div>
-        <div id="content">
-
-            <div class="clickOptions">
-                <h3>|&nbsp;
-                    <a onclick="open('traitCommon', 'traitUncommon')" id="allTraitsClick" href="">all</a>
-                    &nbsp;|&nbsp;
-                    <a onclick="open('traitCommon'); close('traitUncommon');" id="commonTraitsClick" href="">common</a>
-                    &nbsp;|&nbsp;
-                    <a id="uncommonTraitsClick" href="">Uncommon</a>
-                    &nbsp;|
-                </h3>
-            </div>
-
-            <div id="traitCommon">
-                <h2>Common Traits</h2>
-                <div>
-                    <div class="assetBlock">
-                        <img class="assetImg" src="https://placehold.co/500x800" alt="trait">
-                        <div class="assetImgAlt">trait does this and that</div>
-                        <div class="assetName">
-                            <h2>name</h2>
-                        </div>
-                        <div class="foundAt">
-                            found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
-                        </div>
-                    </div>
-                    <div class="assetBlock">
-                        <img class="assetImg" src="https://placehold.co/500x800" alt="trait">
-                        <div class="assetImgAlt">trait does this and that</div>
-                        <div class="assetName">
-                            <h2>name</h2>
-                        </div>
-                        <div class="foundAt">
-                            found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
-                        </div>
-                    </div>
-                    <div class="assetBlock">
-                        <img class="assetImg" src="https://placehold.co/500x800" alt="trait">
-                        <div class="assetImgAlt">trait does this and that</div>
-                        <div class="assetName">
-                            <h2>name</h2>
-                        </div>
-                        <div class="foundAt">
-                            found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
-                        </div>
-                    </div>
-                    <div class="assetBlock">
-                        <img class="assetImg" src="https://placehold.co/500x800" alt="trait">
-                        <div class="assetImgAlt">trait does this and that</div>
-                        <div class="assetName">
-                            <h2>name</h2>
-                        </div>
-                        <div class="foundAt">
-                            found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
-                        </div>
-                    </div>
-                    <div class="assetBlock">
-                        <img class="assetImg" src="https://placehold.co/500x800" alt="trait">
-                        <div class="assetImgAlt">trait does this and that</div>
-                        <div class="assetName">
-                            <h2>name</h2>
-                        </div>
-                        <div class="foundAt">
-                            found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
-                        </div>
-                    </div>
-                </div>
-                <!--
-                <div id="traitUncommon">
-                    <h2>Uncommon Traits</h2>
-                    <div>
-                        <div class="assetBlock">
-                            <img class="assetImg" src="https://placehold.co/500" alt="trait">
-                            <div class="assetImgAlt">trait does this and that</div>
-                            <div class="assetName">
-                                <h2>name</h2>
-                            </div>
-                            <div class="foundAt">
-                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
-                            </div>
-                        </div>
-                        <div class="assetBlock">
-                            <img class="assetImg" src="https://placehold.co/500" alt="trait">
-                            <div class="assetImgAlt">trait does this and that</div>
-                            <div class="assetName">
-                                <h2>name</h2>
-                            </div>
-                            <div class="foundAt">
-                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
-                            </div>
-                        </div>
-                        <div class="assetBlock">
-                            <img class="assetImg" src="https://placehold.co/500" alt="trait">
-                            <div class="assetImgAlt">trait does this and that</div>
-                            <div class="assetName">
-                                <h2>name</h2>
-                            </div>
-                            <div class="foundAt">
-                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
-                            </div>
-                        </div>
-                        <div class="assetBlock">
-                            <img class="assetImg" src="https://placehold.co/500" alt="trait">
-                            <div class="assetImgAlt">trait does this and that</div>
-                            <div class="assetName">
-                                <h2>name</h2>
-                            </div>
-                            <div class="foundAt">
-                                found at&nbsp;<a href=""> <img src="https://placehold.co/100" alt="">&nbsp;drink</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                -->
-
-            </div>
-        </div>
+    <script src="../javascript/code.js"></script>
 </body>
 
 </html>
